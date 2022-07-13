@@ -1,0 +1,209 @@
+*,*::before,*::after{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     line-height: 1.6;
+}
+i{
+     margin-right: 10px;
+}
+/* button{
+     border:none;
+     background-color: rgb(236, 74, 15);;
+     color:#fff;
+     border-radius: 10px; 
+     padding: 10px 15px;
+
+} */
+/* .wrapper{
+     position: relative;
+} */
+
+.navigation{
+     position: sticky;
+     top: 0;
+     left: 0;
+     right: 0;
+     background-color: #fff;
+     display: flex;
+     margin: auto;
+     box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.19);
+     height: 70px;
+     align-items: center;
+     z-index: 2;
+}
+.customer{
+     display:flex;
+     flex: 3;
+     gap: 10px;
+     padding: 1em;
+}
+.customer > div{
+     flex:1;
+     justify-content: space-between;
+     cursor: pointer;
+}
+
+.customer > div:hover{
+     color: orange;
+     
+}
+
+
+.local{
+     display: flex;
+     align-items: center;
+     flex:3;
+     padding-left: 2em;
+     gap: 1em;
+     
+}
+.logo,sup{
+    color: tomato;
+}
+.location{
+     
+     padding: 1em;
+}
+
+/* offers */
+.slide{
+     
+     width: 100%;
+     overflow: hidden;
+     background-color:#171a29;
+}
+.offers{
+    
+     display: flex;
+     height: 340px;
+     width: 130%;
+     align-items: center;
+     justify-content: center;
+     gap: 2em;
+     padding:1rem;
+
+    
+}
+
+
+
+.offer1 img{
+ object-fit: contain;
+}
+.offer1{
+     transform:none;
+     transition: transform 200ms ease-in-out;
+}
+
+.offer1:hover{
+     transform: scale(1.1);
+     
+}
+
+.rbtn,.lbtn{
+     border:none;
+     background-color: #fff;
+     padding: 10px;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     z-index: 1;
+     
+}
+.rbtn{
+     position: absolute;
+     right: 5%;
+}
+
+.lbtn{
+     position: absolute;
+     left: 5%;
+}
+
+
+/* choosing restoutrant*/
+
+.choose{
+     position: sticky;
+     top: 0;
+     left:0;
+     right: 0;
+     display:flex;
+     background-color: #fff;
+     border-bottom: 1px solid rgb(189, 188, 188);
+     width: 90%;
+     padding: 10px;
+     margin: auto;
+     margin-top: 1em;
+}
+.choose > .resturants{
+     flex:1
+}
+
+.filters{
+     flex:2;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+
+.filters .discount{
+     border-bottom: 1px solid black;
+}
+
+/* cards */
+.card{
+     border: 1px solid white;
+     transition: border 300ms ease-in-out;
+}
+.card:hover{
+ border: 1px solid #a6a7a8;
+
+}
+
+
+.hotelList{
+     display: flex;
+     flex-wrap: wrap;
+     padding-top:1em ;
+     gap: 1em;
+     width: 90%;
+     margin: auto;
+     
+}
+
+.hotelcard{
+     min-width: 150px;
+     max-width:235px;
+     margin: auto;
+}
+.hotelcard> div{
+     margin-bottom: 1em;
+}
+.about{
+     border-bottom: 1px solid rgb(189, 188, 188);
+     padding: 10px 0;
+}
+ul{
+     display: flex;
+     gap: 10px;
+}
+
+ul li {
+     list-style-position: inside;
+     flex:1;
+     text-align: center;
+}
+ul li:nth-child(1){
+     list-style: none;
+     width: 25%;
+     background-color: green;
+     color: #fff;
+}
+
+.thallupadi{
+     color: rgba(124, 56, 56, 0.892);
+}
+

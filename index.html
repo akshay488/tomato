@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tomato</title>
+    <link rel="stylesheet" href="customstyles/style.css">
+    <link rel="stylesheet" href="customstyles/form.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/webfonts/">
+ 
+</head>
+<body>
+   
+    <div class="wrapper">
+        <header>
+            <div class="navigation">
+            <div class="local">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo" width="50">
+                </div>
+                <div class="location">  
+                    <span><i class="fa-solid fa-location-dot"></i>Location</span>
+                   <p> palakkad kerala ...</p>
+                </div>
+            </div>
+            
+            <div class="customer">
+                <div class="search">                    
+                    <span><i class="fa-solid fa-magnifying-glass"></i>search</span>
+                </div>
+                <div class="offer">
+                    <span><i class="fa-solid fa-crosshairs"></i></i>offers</span> <sup>new</sup>
+                </div>
+                <div  id="openbtn" style="cursor: pointer;">
+                    <span ><i class="fa-solid fa-user"></i>sign in</span>
+                </div>
+                <div class="cart">
+                        <span><i class="fa-solid fa-cart-shopping"></i>Cart</span>
+                </div>
+            </div>
+            
+            </div>
+            <div class="formcover close" id="signin" >
+                <div class="signinForm">
+                    <div style="margin-top:10px ;">
+                    <span style="cursor:pointer ;" id="closebtn"><i class="fa-solid fa-xmark fa-xl"></i></span>
+                    </div>
+                    <div class="formheader" >
+                    
+                    <div class="login">
+                        <h2 id="hedr">Login</h2>
+                        <p>or <a href="#" id="switchform">create a new account</a></p>
+                       <hr style="width: 20px; margin-top:20px; color:#000; font-size: 2px;"> 
+                    </div>
+                    </div>
+                
+                    <div  id="forms">
+                        <form action="" class="open" id="form1">
+                        <div class="number">
+                            <input type="tel" id="mobile"  name="mobile" autofocus>
+                            <label class="largetxt"  for="mobile">Phone number</label>
+                        </div>
+                        <div class="login">
+                            <input type="submit" value="login">
+                        </div>
+                        </form>
+                   
+                   
+                        <form action="" class="close" id="form2">
+                    <div class="number">
+                        <input type="tel" id="mobile"  name="mobile" autofocus>
+                        <label class="largetxt"  for="mobile">Phone number</label>
+                    </div>
+                    <div class="number">
+                        <input type="text" id="name"  name="name" >
+                        <label class="largetxt"  for="name">Name</label>
+                    </div>
+                    <div class="number">
+                        <input type="email" id="mail"  name="mail">
+                        <label class="largetxt"  for="mail">Email</label>
+                    </div>
+                    <div class="number">
+                        <input type="password" id="pwd"  name="pwd" >
+                        <label class="largetxt"  for="pwd">password</label>
+                    </div>
+                    <div class="login">
+                        <input type="submit" value="continue">
+                    </div>
+                        </form>
+                    </div>
+                </div>
+            </div>        
+            <div class="slide"id="offers">
+            <div class="offers" >
+                <button  class= "lbtn" id="leftbtn" onclick="slide('left')">
+                    <i class="fa-solid fa-arrow-left-long fa-xl"></i>
+                </button>
+                <div class="offer1">
+                    <a href="#">
+                        <img src="images/offers/offer1.webp" alt="" width="250" height="auto">
+                    </a>
+                    
+                </div>
+                <div class="offer1">
+                    <a href="#">
+                    <img src="images/offers/offer2.webp" alt="" width="250" height="auto">
+                    </a>
+                </div>
+                <div class="offer1">
+                    <a href="#">
+                    <img src="images/offers/offer3.webp" alt=".." width="250" height="auto">
+                    </a>
+                </div>
+                <div class="offer1">
+                    <a href="#">
+                    <img src="images/offers/offer4.webp" alt=".." width="250" height="auto">
+                    </a>
+                </div>
+                <div class="offer1">
+                    <a href="#">
+                    <img src="images/offers/offer5.webp" alt=".." width="250" height="auto">
+                    </a>
+                </div>
+                
+             
+                <button  id="rightbtn" class="rbtn" onclick="slide('right')">
+                    <i class="fa-solid fa-arrow-right-long fa-xl"></i>
+                </button>
+            </div>
+            </div>    
+        </header>
+        <!-- filter nav -->
+
+    
+        <div class="choose">
+            <div class="resturants"><h2>23 Resturants</h2> </div>
+            <div class="filters">
+                <div class="discount">Relevance</div>
+                <div class="rating">Rating</div>
+                <div class="priceLH">Cost: Low To High</div>
+                <div class="priceHL">Cost: High To Low</div>
+                <div class="otherFilters">
+                    <span>filter <i class="fa-solid fa-filter"></i></span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="hotelList">
+
+            <div class="card" style="padding:1em" onclick="navigate('hotel1')">
+                <div class="hotelcard">
+                    <img src="images/hotels/hotel2.jpg" alt="hotel2"  width="100%" height="auto">
+                    <div class="hotelname">
+                        <h3>hotel-1</h3>
+                        <p>item1,item2,item3</p>
+                    </div>
+                    <div class="about">
+                        <ul>
+                            <li> <span><i class="fa-solid fa-star fa-xs"> 4.4</i></span> </li>
+                            <li>time</li>
+                            <li>Price</li>
+                        </ul>
+                    </div>
+                    <div class="thallupadi">
+                        <p><span>50%</span> discount</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="padding:1em" onclick="navigate('hotel2')">
+                <div class="hotelcard">
+                    <img src="images/hotels/hotel3.webp" alt="hotel3"  width="100%" height="auto">
+                    <div class="hotelname">
+                        <h3>hotel-2</h3>
+                        <p>item1,item2,item3</p>
+                    </div>
+                    <div class="about">
+                        <ul>
+                            <li> <span><i class="fa-solid fa-star fa-xs"> 4.4</i></span> </li>
+                            <li>time</li>
+                            <li>Price</li>
+                        </ul>
+                    </div>
+                    <div class="thallupadi">
+                        <p><span>50%</span> discount</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="padding:1em"onclick="navigate('hotel3')">
+                <div class="hotelcard">
+                    <img src="images/hotels/hotel5.jpg" alt="hotel4"  width="100%" height="auto">
+                    <div class="hotelname">
+                        <h3>hotel-3</h3>
+                        <p>item1,item2,item3</p>
+                    </div>
+                    <div class="about">
+                        <ul>
+                            <li> <span><i class="fa-solid fa-star fa-xs"> 4.4</i></span> </li>
+                            <li>time</li>
+                            <li>Price</li>
+                        </ul>
+                    </div>
+                    <div class="thallupadi">
+                        <p><span>50%</span> discount</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="padding:1em" onclick="navigate('hotel4')">
+                <div class="hotelcard">
+                    <img src="images/hotels/hotel6.jpg" alt="hotel5"  width="100%" height="auto">
+                    <div class="hotelname">
+                        <h3>hotel-4</h3>
+                        <p>item1,item2,item3</p>
+                    </div>
+                    <div class="about">
+                        <ul>
+                            <li> <span><i class="fa-solid fa-star fa-xs"> 4.4</i></span> </li>
+                            <li>time</li>
+                            <li>Price</li>
+                        </ul>
+                    </div>
+                    <div class="thallupadi">
+                        <p><span>50%</span> discount</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="padding:1em" onclick="navigate('hotel5')">
+                <div class="hotelcard">
+                    <img src="images/hotels/hotel1.webp" alt="hotel1"  width="100%" height="auto">
+                    <div class="hotelname">
+                        <h3>hotel-5</h3>
+                        <p>item1,item2,item3</p>
+                    </div>
+                    <div class="about">
+                        <ul>
+                            <li> <span><i class="fa-solid fa-star fa-xs"> 4.4</i></span> </li>
+                            <li>time</li>
+                            <li>Price</li>
+                        </ul>
+                    </div>
+                    <div class="thallupadi">
+                        <p><span>50%</span> discount</p>
+                    </div>
+                </div>
+            </div>
+
+
+         
+        </div>
+    </div>
+
+<script src="style.js" ></script>
+    <script>
+
+      
+        function slide(direction){
+            const container = document.querySelector('#offers');
+            let scrollCompleted = 0;
+           let slideBar = setInterval(function(){
+             if (direction === 'left') {
+                container.scrollLeft -= 10;
+             }
+             else{
+                container.scrollLeft +=10;
+             }scrollCompleted +=10;
+             if(scrollCompleted >= 100){
+                window.clearInterval(slideBar);
+             }
+           },25);
+
+        }
+        
+
+
+    </script>
+</body>
+</html>
