@@ -5,9 +5,148 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hotel1</title>
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <link rel="stylesheet" href="../customstyles/style.css">
+    <link rel="stylesheet" href="../customstyles/hotel.css">
+    <link rel="stylesheet" href="../customstyles/form.css">
+   
 </head>
 <body>
-    <h1>hotel 1</h1>
-    <p>item1,item2,item3</p>
+   <div class="wrapper">
+    <div class="navigation">
+        <div class="local">
+            <div class="logo">
+                <img src="../images/logo.png" alt="logo" width="50">
+            </div>
+            <div class="location">  
+                <span><i class="fa-solid fa-location-dot"></i>Location</span>
+               <p> palakkad kerala ...</p>
+            </div>
+        </div>
+        
+        <div class="customer">
+            <div class="search">                    
+                <span><i class="fa-solid fa-magnifying-glass"></i>search</span>
+            </div>
+            <div class="offer">
+                <span><i class="fa-solid fa-crosshairs"></i></i>offers</span> <sup>new</sup>
+            </div>
+            <div  id="openbtn" style="cursor: pointer;">
+                <span ><i class="fa-solid fa-user"></i>sign in</span>
+            </div>
+            <div class="cart">
+                    <span><i class="fa-solid fa-cart-shopping"></i>Cart</span>
+            </div>
+        </div>
+       
+        
+     </div>
+     <div class="formcover close" id="signin" >
+        <div class="signinForm">
+            <div style="margin-top:10px ;">
+            <span style="cursor:pointer ;" id="closebtn"><i class="fa-solid fa-xmark fa-xl"></i></span>
+            </div>
+            <div class="formheader" >
+            
+            <div class="login">
+                <h2 id="hedr">Login</h2>
+                <p>or <a href="#" id="switchform">create a new account</a></p>
+               <hr style="width: 20px; margin-top:20px; color:#000; font-size: 2px;"> 
+            </div>
+            </div>
+        
+            <div  id="forms">
+                <form action="" class="open" id="form1">
+                <div class="number">
+                    <input type="tel" id="mobile"  name="mobile" autofocus>
+                    <label class="largetxt"  for="mobile">Phone number</label>
+                </div>
+                <div class="login">
+                    <input type="submit" value="login">
+                </div>
+                </form>
+           
+           
+                <form action="" class="close" id="form2">
+            <div class="number">
+                <input type="tel" id="mobile"  name="mobile" autofocus>
+                <label class="largetxt"  for="mobile">Phone number</label>
+            </div>
+            <div class="number">
+                <input type="text" id="name"  name="name" >
+                <label class="largetxt"  for="name">Name</label>
+            </div>
+            <div class="number">
+                <input type="email" id="mail"  name="mail">
+                <label class="largetxt"  for="mail">Email</label>
+            </div>
+            <div class="number">
+                <input type="password" id="pwd"  name="pwd" >
+                <label class="largetxt"  for="pwd">password</label>
+            </div>
+            <div class="login">
+                <input type="submit" value="continue">
+            </div>
+                </form>
+            </div>
+        </div>
+    </div>  
+    <!-- hoteldetails -->
+
+     <div class="cover">
+        <div class="hotelimg">
+            <img src="../images/hotels/hotel2.jpg" alt="hotel-1" width="100%">
+        </div>
+        <div class="info">
+           <div class="hotelname">
+            <h1>hotel-1</h1>
+           </div> 
+
+            <div class="details">
+                <p>NorthIndian,Punjabi</p>
+                <p>street, city</p>
+                <br>
+                <div class="ca">
+                    <div class="c1">
+                        <span><i class="fa-solid fa-star"></i>4.1</span>
+                        <p>50+ rating</p>
+                    </div>
+                    <div class="c1">
+                        <span>30m</span>
+                        <p>Delivery time</p>
+                    </div>
+                    <div class="c1">
+                        <span><i class="fa-solid fa-indian-rupee-sign"></i>400m</span>
+                        <p>cost for two</p>
+                    </div>
+                </div>
+            </div>
+            <div class="c2">
+                <div class="search">  
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span>                   
+                        <input type="text" name="serch" id="search" placeholder="Search for dishes">
+                    </span>
+                </div>
+                <div class="veg">  
+                    <span><input type="checkbox" name="veg" id="veg"></span>
+                    <span>                   
+                       Veg only
+                    </span>
+                </div>
+                <div class="fav">  
+                    <span><i class="fa-solid fa-heart"></i></span>
+                    <span>                   
+                       Favourite
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    
+   </div>
+   <script src="../style.js"></script>
 </body>
 </html>

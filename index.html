@@ -136,10 +136,10 @@
         <div class="choose">
             <div class="resturants"><h2>23 Resturants</h2> </div>
             <div class="filters">
-                <div class="discount">Relevance</div>
-                <div class="rating">Rating</div>
-                <div class="priceLH">Cost: Low To High</div>
-                <div class="priceHL">Cost: High To Low</div>
+                <div class="discount" onclick="relavance()">Relevance</div>
+                <div class="rating" onclick=" rating()">Rating</div>
+                <div class="priceLH" onclick="priceLH()">Cost: Low To High</div>
+                <div class="priceHL" onclick="priceHL()">Cost: High To Low</div>
                 <div class="otherFilters">
                     <span>filter <i class="fa-solid fa-filter"></i></span>
                 </div>
@@ -147,19 +147,22 @@
             </div>
         </div>
 
-        <div class="hotelList">
+        <div class="hotelList" id="hotelList">
 
-            <div class="card" style="padding:1em" onclick="navigate('hotel1')">
+            <!-- <div class="card"  onclick="navigate('hotel1')">
                 <div class="hotelcard">
-                    <img src="images/hotels/hotel2.jpg" alt="hotel2"  width="100%" height="auto">
+                    <img src="images/hotels/hotel2.jpg" alt="hotel2"  width="100%" height="auto" >
                     <div class="hotelname">
                         <h3>hotel-1</h3>
-                        <p>item1,item2,item3</p>
+                        <p >item1,item2,item3</p>
                     </div>
                     <div class="about">
                         <ul>
-                            <li> <span><i class="fa-solid fa-star fa-xs"> 4.4</i></span> </li>
-                            <li>time</li>
+                            <li> 
+                                <span><i class="fa-solid fa-star fa-xs"> </i></span>
+                               <span>4.4</span>  
+                            </li>                           
+                             <li>time</li>
                             <li>Price</li>
                         </ul>
                     </div>
@@ -169,85 +172,8 @@
                 </div>
             </div>
 
-            <div class="card" style="padding:1em" onclick="navigate('hotel2')">
-                <div class="hotelcard">
-                    <img src="images/hotels/hotel3.webp" alt="hotel3"  width="100%" height="auto">
-                    <div class="hotelname">
-                        <h3>hotel-2</h3>
-                        <p>item1,item2,item3</p>
-                    </div>
-                    <div class="about">
-                        <ul>
-                            <li> <span><i class="fa-solid fa-star fa-xs"> 4.4</i></span> </li>
-                            <li>time</li>
-                            <li>Price</li>
-                        </ul>
-                    </div>
-                    <div class="thallupadi">
-                        <p><span>50%</span> discount</p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="card" style="padding:1em"onclick="navigate('hotel3')">
-                <div class="hotelcard">
-                    <img src="images/hotels/hotel5.jpg" alt="hotel4"  width="100%" height="auto">
-                    <div class="hotelname">
-                        <h3>hotel-3</h3>
-                        <p>item1,item2,item3</p>
-                    </div>
-                    <div class="about">
-                        <ul>
-                            <li> <span><i class="fa-solid fa-star fa-xs"> 4.4</i></span> </li>
-                            <li>time</li>
-                            <li>Price</li>
-                        </ul>
-                    </div>
-                    <div class="thallupadi">
-                        <p><span>50%</span> discount</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="padding:1em" onclick="navigate('hotel4')">
-                <div class="hotelcard">
-                    <img src="images/hotels/hotel6.jpg" alt="hotel5"  width="100%" height="auto">
-                    <div class="hotelname">
-                        <h3>hotel-4</h3>
-                        <p>item1,item2,item3</p>
-                    </div>
-                    <div class="about">
-                        <ul>
-                            <li> <span><i class="fa-solid fa-star fa-xs"> 4.4</i></span> </li>
-                            <li>time</li>
-                            <li>Price</li>
-                        </ul>
-                    </div>
-                    <div class="thallupadi">
-                        <p><span>50%</span> discount</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="padding:1em" onclick="navigate('hotel5')">
-                <div class="hotelcard">
-                    <img src="images/hotels/hotel1.webp" alt="hotel1"  width="100%" height="auto">
-                    <div class="hotelname">
-                        <h3>hotel-5</h3>
-                        <p>item1,item2,item3</p>
-                    </div>
-                    <div class="about">
-                        <ul>
-                            <li> <span><i class="fa-solid fa-star fa-xs"> 4.4</i></span> </li>
-                            <li>time</li>
-                            <li>Price</li>
-                        </ul>
-                    </div>
-                    <div class="thallupadi">
-                        <p><span>50%</span> discount</p>
-                    </div>
-                </div>
-            </div>
+           -->
 
 
          
@@ -255,6 +181,7 @@
     </div>
 
 <script src="style.js" ></script>
+<script src="sorting.js" ></script>
     <script>
 
       

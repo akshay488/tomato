@@ -4,7 +4,7 @@
      box-sizing: border-box;
      line-height: 1.6;
 }
-i{
+.navigation i{
      margin-right: 10px;
 }
 /* button{
@@ -149,14 +149,13 @@ i{
 }
 
 
-.filters .discount{
-     border-bottom: 1px solid black;
-}
+
 
 /* cards */
 .card{
      border: 1px solid white;
      transition: border 300ms ease-in-out;
+     padding: 1em;
 }
 .card:hover{
  border: 1px solid #a6a7a8;
@@ -188,22 +187,34 @@ i{
 }
 ul{
      display: flex;
+     justify-content: space-around;
      gap: 10px;
 }
 
 ul li {
      list-style-position: inside;
      flex:1;
+     flex-shrink: 0;
      text-align: center;
 }
-ul li:nth-child(1){
+
+ul li:nth-child(1) {
      list-style: none;
-     width: 25%;
-     background-color: green;
+     width: 20%;
      color: #fff;
+     background-color: green;
 }
+
 
 .thallupadi{
      color: rgba(124, 56, 56, 0.892);
 }
 
+.filters > div{
+     cursor:pointer;
+}
+
+.filters > div:hover{
+     color:#a6a7a8;
+     border-bottom: 1px solid #2b2b2b;
+}
